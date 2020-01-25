@@ -15,7 +15,7 @@ public class BasicCollections {
 		
 		/* 
 		 * List type stores all added data 
-		 *		in sequential order.
+		 *	in sequential order.
 		*/
 		System.out.println("--- List ---");
 		List orderInList = new ArrayList();
@@ -34,7 +34,7 @@ public class BasicCollections {
 		
 		/* 
 		 * Set type stores all unique data, no duplicates.
-		 * TreeSet is a sorted set.
+		 *	TreeSet is a sorted set.
 		*/
 		System.out.println("\n--- Set ---");
 		Set orderInSet = new TreeSet();
@@ -53,9 +53,9 @@ public class BasicCollections {
 		
 		/* 
 		 * Queue type stores and holds all data
-		 *		until they are needed.
+		 *	until they are needed.
 		 * PriorityQueue is the same as queue, 
-		 *  	but also sorts the data alphabetically.
+		 *	but also sorts the data alphabetically.
 		*/
 		System.out.println("\n--- Queue ---");
 		Queue orderInQueue = new PriorityQueue();
@@ -75,8 +75,8 @@ public class BasicCollections {
 		
 		/* 
 		 * Deque type is a Queue that supports the 
-		 * 		insertion and extraction of elements
-		 * 		on both ends.
+		 *	insertion and extraction of elements
+		 *	on both ends.
 		*/
 		System.out.println("\n--- Deque Last/First ---");
 		Deque orderInDeque = new ArrayDeque();
@@ -129,5 +129,4 @@ public class BasicCollections {
 			System.out.println(orders);
 		}
 	}
-
 }
