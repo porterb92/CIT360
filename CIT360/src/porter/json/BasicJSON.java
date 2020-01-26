@@ -24,22 +24,22 @@ public class BasicJSON {
 	
 	// System prompts user to create an Avatar object
 	System.out.print("What is your name?: ");
-	String name = input.nextLine();
+	String name = emptyString(input.nextLine(), input);
 	System.out.print("How old are you?: ");
-	String age = input.nextLine();
+	int age = numInput(emptyString(input.nextLine(), input), input);
 	System.out.print("What is the color of your hair?: ");
-	String hair = input.nextLine();
+	String hair = emptyString(input.nextLine(), input);
 	System.out.print("What is your height? (i.e. 5'6\"): ");
-	String height = input.nextLine();
+	String height = emptyString(input.nextLine(), input);
 	System.out.print("What is your body type? (slim, muscular, big, etc.): ");
-	String body = input.nextLine();
+	String body = emptyString(input.nextLine(), input);
 	
 	// Scanner object closes
 	input.close();
 	
 	// New Avatar is created
 	ArrayList<Avatar> objJava = new ArrayList<Avatar>();
-	objJava.add(new Avatar(name, Integer.parseInt(age), hair, height, body));
+	objJava.add(new Avatar(name, age, hair, height, body));
 	
 	// Display Java object
 	System.out.print("\n---- Java Object ----\n");
@@ -129,5 +129,47 @@ public class BasicJSON {
 		
 		// Returns new Java object
 		return newObject;
+	}
+	
+	
+	/* Method that makes sure there are no empty inputs
+ 	*  @param input, tryAgain
+ 	*/
+	public static String emptyString(String input, Scanner tryAgain) {
+		
+		// While loop that makes certain user input is not empty or null
+		while(input.isEmpty()) {
+			System.err.print("Invalid entry. Please enter a response: ");
+			input = tryAgain.nextLine();
+		}
+		
+		// return valid input
+		return input;
+	}
+	
+	
+	/* Method that makes sure input is an integer
+ 	*  @param input, tryAgain
+ 	*/
+	public static int numInput(String input, Scanner tryAgain) {
+		
+		// Initial integer variable
+		int convert2Num = 0;
+		
+		// While loop that makes certain user input can be parsed into an integer
+		while (!input.isEmpty()) {
+			try {
+				convert2Num = Integer.parseInt(input);
+				break;
+			}
+		
+			catch (NumberFormatException ex) {
+				System.err.print("Invalid entry.  Please enter a number: ");
+				input = emptyString(tryAgain.nextLine(), tryAgain);
+			}
+		}
+		
+		// Returns valid integer
+		return convert2Num;
 	}
 }
