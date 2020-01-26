@@ -143,7 +143,7 @@ public class BasicJSON {
 			input = tryAgain.nextLine();
 		}
 		
-		// return valid input
+		// Returns valid input
 		return input;
 	}
 	
