@@ -27,6 +27,9 @@ public class BasicHTTP {
 		 System.out.print("Enter the domain name to send a POST request\n(oracle.com, byui.edu, churchofjesuschrist.org): ");
 		 String domainPost = emptyString(input.nextLine(), input);
 		 
+		 // Close Scanner object
+		 input.close();
+		 
 		 // Using GET and POST request methods towards the input domain names
 		 sendGet(domainGet);
 		 sendPost(domainPost);
