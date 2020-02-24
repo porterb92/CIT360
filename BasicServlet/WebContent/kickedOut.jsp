@@ -1,3 +1,8 @@
+<!-- 
+  .jsp file that contains login form, if login was invalid the first attempt.
+  @author Benjamin Porter
+-->
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>

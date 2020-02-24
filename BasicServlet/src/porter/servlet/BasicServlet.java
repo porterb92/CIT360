@@ -1,3 +1,9 @@
+/**
+ * Basic servlet class that extracts parameters 
+ * from requested form and determines web response.
+ * @author Benjamin Porter
+ */
+
 package porter.servlet;
 
 import java.io.IOException;
@@ -36,11 +42,13 @@ public class BasicServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		// Extract requests from form
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
 		String user = request.getParameter("uname");
 		String pword = request.getParameter("pword");
 		
+		// Successful login condition
 		if(user.equals("Tuckett") && pword .equals("java")) {
 			out.println("<html><head><style>\r\nh1{\r\ntext-align: left;\r\n" + 
 					"font-family: arial;\r\n}\r\nbody{\r\nbackground-color: #0B615E;\r\n" + 

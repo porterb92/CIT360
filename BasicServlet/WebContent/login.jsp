@@ -1,3 +1,7 @@
+<!-- 
+  .jsp file that contains login form.
+  @author Benjamin Porter
+-->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -13,7 +17,6 @@
 	font-family: arial;
 	padding: 6px 25px;
 }
-
 #submit:hover{
 	background-color: #E6E6E6;
 	border: none;
@@ -23,7 +26,6 @@
 	font-family: arial;
 	padding: 6px 25px;
 }
-
 h1{
 	text-align: left;
 	font-family: arial;
@@ -55,6 +57,5 @@ body{
 	<input type = "password" id = "pword" name = "pword"><br><br>		
 	<input type = "submit" id="submit" value = "Login">	
 </form>
-
 </body>
 </html>
