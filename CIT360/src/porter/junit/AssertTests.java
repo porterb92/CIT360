@@ -20,7 +20,7 @@ public class AssertTests {
 	String str1 = "pass";
 	String str2 = "pass";
 	int val1 = 8;
-	int val2 = 7;
+	int val2 = 8;
 	
 	// Method that tests for matching arrays
 	@Test
@@ -31,7 +31,7 @@ public class AssertTests {
 	// Method that tests for equal values between two objects
 	@Test
 	public void testAssertEquals() {
-		assertEquals("assertEquals test failed. Objects are not equal to each other.\n", none, str2);
+		assertEquals("assertEquals test failed. Objects are not equal to each other.\n", str1, str2);
 	}
 	
 	// Method that tests for false conditions. Fails if condition is true.
@@ -61,7 +61,7 @@ public class AssertTests {
 	// Method that tests if both objects are the same
 	@Test
 	public void testAssertSame() {
-		assertSame("assertSame test failed. Objects are not the same.\n", str1, str2);
+		assertSame("assertSame test failed. Objects are not the same.\n", val1, val2);
 	}
 	
 	// Method that tests objects using hamcrest matchers	
