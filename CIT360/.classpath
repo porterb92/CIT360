@@ -5,5 +5,8 @@
 	<classpathentry kind="lib" path="C:/Users/Ben/Desktop/Files/CIT 360/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ben/Desktop/Files/CIT 360/junit-4.13.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ben/Desktop/Files/CIT 360/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/Desktop/Files/CIT 360/hibernate-core-5.0.12.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/Desktop/Files/CIT 360/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/Desktop/Files/CIT 360/protobuf-java-3.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
